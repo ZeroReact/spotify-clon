@@ -1,0 +1,50 @@
+main
+    grid-area: content
+    background: linear-gradient(180deg, #222, #111)
+    min-height: 100vh
+    padding: 10px 15px
+    border-radius: 7px
+    .playlists
+        display: grid
+        grid-template-columns: repeat(5, 1fr)
+        gap: 10px
+        #cardSong
+            display: flex
+            flex-direction: column
+            background: #202020
+            border-radius: 15px
+            padding: 15px
+            img
+                width: 150px
+                height: 175px
+                border-radius: 15px
+                margin-bottom: 10px
+                align-self: center
+                justify-self: center
+            h3
+                align-self: center
+                font-size: .9rem
+            p
+                color: #aaa
+                font-size: .9rem
+            a
+                display: flex
+                color: #aaa
+                font-weight: lighter
+    .recommended
+        margin-top: 10px
+        display: grid
+        grid-template-columns: minmax(60px, 1fr)
+        gap: 30px
+        section
+            display: grid
+            grid-template-columns: repeat(3, minmax(60px, 1fr))
+            gap: 5px
+            h1
+                font-size: 2rem
+    .forYou
+        .presentPlaylist
+            display: flex
+            align-items: center
+            h1
+                margin-bottom: 20px

@@ -1,0 +1,30 @@
+@import '../abstracts/mixins'
+@import '../abstracts/variants'
+@import '../base/base'
+@import '../base/resets'
+@import '../../jsx/header/header'
+@import '../../jsx/main/main'
+@import '../../jsx/main/login'
+@import '../../jsx/sidebar/sidebar'
+@import '../../jsx/main/search'
+@import '../components/recCard.sass'
+
+body
+    color: #fff
+    background: #000
+    overflow-x: hidden
+    overflow-y: scroll
+    min-height: 100vh
+    padding: 7px
+
+body #root
+    display: grid
+    grid-template-columns: 280px 1fr
+    grid-template-areas: "sidebar content"
+    gap: 10px
+
+.presentPlaylist
+    display: flex
+    justify-content: space-between
+    margin-top: 40px
+    align-items: center

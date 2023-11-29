@@ -1,0 +1,112 @@
+aside
+    display: grid
+    grid-area: sidebar
+    align-items: flex-start
+    position: fixed
+    width: 280px
+    max-height: 100vh
+    gap: 10px
+    nav
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        width: 100%
+        height: 110px
+        background-color: #121212
+        font-weight: bold
+        gap: 20px
+        border-radius: 10px
+        padding: 10px 25px
+        li
+            font-size: 1.1rem
+            display: flex
+        a
+            display: flex
+            align-items: center
+            color: #aaa
+            justify-content: center
+            gap: 15px
+    section
+        flex-direction: column
+        background: #121212
+        border-radius: 10px
+        font-weight: bold
+        padding: 3px 7px
+        display: flex
+        height: 100%
+        .catalog
+            flex-direction: column
+            border-radius: 10px
+            display: flex
+            height: 100%
+            width: 100%
+            gap: 5px
+            div
+                padding: 5px
+                display: grid
+                grid-template-columns: 8fr 1fr 1fr
+                align-items: center
+                .iYxpxA
+                    fill: #aaa
+                    width: 25px
+                    height: 25px
+            .biblioteca
+                display: flex
+                align-items: center
+                justify-content: space-between
+                gap: 5px
+                color: #aaa
+            .direct
+                display: flex
+                align-items: center
+                justify-content: center
+            .categories
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                gap: 5px
+                a
+                    color: #fff
+                    padding: 7px 10px
+                    background: #252525
+                    border-radius: 20px
+                    font-size: .8em
+                    font-weight: lighter
+        .artist
+            gap: 10px
+            .searchSongAfterLister
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                padding: 0px 10px
+                a
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    width: 80px
+                    font-weight: lighter
+                    font-size: .8rem
+            a
+                color: #aaa
+        #asideCard
+            display: grid
+            grid-template-columns: 1fr 3fr
+            grid-template-rows: 1fr 1fr
+            grid-template-areas: "Avatar Nombre""Avatar Descripcion"
+            margin-bottom: 10px
+            .avatar
+                display: grid
+                grid-area: Avatar
+                place-content: center
+            .artista
+                grid-area: Nombre
+                display: flex
+                justify-content: center
+            .tipo
+                grid-area: Descripcion
+                font-size: .8rem
+                font-weight: lighter
+            img
+                width: 45px
+                height: 45px
